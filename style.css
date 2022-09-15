@@ -1,1 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+header,
+footer {
+  width: 100%;
+  height: 15vh;
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+aside {
+  border: 1px solid black;
+}
+
+
+.content-container article
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+}
+
+.gallery
+{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) ;
+  gap: 0 20px;
+
+ 
+}
+
+header .logout
+{
+  justify-self: end;
+}
+
+header
+{
+  /* display: block; */
+display: grid;
+grid-template-columns: 10%  1fr 10%;
+justify-items: end;
+align-items: center;
+/* 10px 10% 10vh */
+/* fr = fração = flexivel */
+}
+
+footer
+{
+  display: grid;
+  position: fixed;
+  bottom: 0;
+  justify-items: center;
+  align-items: center;
+}
